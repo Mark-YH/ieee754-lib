@@ -2,6 +2,7 @@
 // Created by Mark Hsu on 2020/11/3.
 //
 #include <iostream>
+#include <cmath>
 #include <iomanip>
 #include "IEEE754.h"
 
@@ -93,7 +94,7 @@ void exam1j() {
     unsigned long long count = 0;
     IEEE754 a("0", "11111110", "00000000000000000000000");
 
-    while (a.getDecimal() < powf(2.0, 128) - powf(2.0, 104)) {
+    while (a.getDecimal() < pow(2.0, 128) - pow(2.0, 104)) {
         a++;
         count++;
     }
